@@ -1,0 +1,12 @@
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  build: {
+    outDir: 'dist',    // Vercel deployment ke liye folder
+    sourcemap: true,   // optional, debugging ke liye
+  },
+  base: './',           // relative paths ke liye safe
+});

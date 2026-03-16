@@ -1,0 +1,370 @@
+/* START YOUR PROJECT PAGE - DARK FUTURISTIC UI */
+
+.start-project {
+  background-color: #0b0f19;
+  color: #fff;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Typography Utilities */
+.sp-text-gradient {
+  background: linear-gradient(135deg, #00e5ff, #0077ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-text {
+  color: #00e5ff;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.5), 0 0 20px rgba(0, 229, 255, 0.3);
+}
+
+.section-padding {
+  padding: 80px 20px;
+}
+
+.sp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sp-section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 229, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 229, 255, 0.4);
+}
+
+/* Buttons */
+.sp-btn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(0, 229, 255, 0.5);
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.sp-btn--glow {
+  background: rgba(0, 229, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+}
+
+.sp-btn--glow:hover {
+  background: rgba(0, 229, 255, 0.2);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.6);
+  transform: translateY(-2px);
+  border-color: #00e5ff;
+}
+
+.sp-btn--full {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  padding: 16px;
+}
+
+.sp-btn--large {
+  padding: 18px 40px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+}
+
+/* HERO SECTION */
+.sp-hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 100px 20px 60px;
+}
+
+.sp-hero__bg-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.15) 0%, rgba(11, 15, 25, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.sp-hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.sp-hero__title {
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 800;
+  margin: 0;
+}
+
+.sp-hero__subtitle {
+  font-size: 1.25rem;
+  color: #a0aabf;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sp-hero__trust {
+  font-size: 0.9rem;
+  color: #8892b0;
+  margin-top: 10px;
+}
+
+/* PROCESS SECTION */
+.sp-process__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.sp-process__card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sp-process__step {
+  font-size: 3rem;
+  font-weight: 800;
+  opacity: 0.8;
+}
+
+.sp-process__card-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.sp-process__card-desc {
+  color: #8892b0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* PROJECT FORM */
+.sp-form-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-glow {
+  box-shadow: 0 0 40px rgba(0, 229, 255, 0.1);
+}
+
+.sp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sp-form__row {
+  display: flex;
+  gap: 20px;
+}
+
+.sp-form__row > * {
+  flex: 1;
+}
+
+.sp-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sp-form__group label {
+  font-size: 0.9rem;
+  color: #ccd6f6;
+  font-weight: 500;
+}
+
+.sp-form__group input,
+.sp-form__group select,
+.sp-form__group textarea {
+  background: rgba(11, 15, 25, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.sp-form__group input:focus,
+.sp-form__group select:focus,
+.sp-form__group textarea:focus {
+  border-color: #00e5ff;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+}
+
+.sp-form__group select option {
+  background: #0b0f19;
+  color: #fff;
+}
+
+.sp-file-upload {
+  border: 1px dashed rgba(0, 229, 255, 0.4);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(0, 229, 255, 0.02);
+}
+
+.sp-file-upload:hover {
+  background: rgba(0, 229, 255, 0.05);
+  border-color: #00e5ff;
+}
+
+.sp-file-upload input {
+  display: none;
+}
+
+.sp-file-upload span {
+  color: #00e5ff;
+  font-size: 0.9rem;
+}
+
+/* FEATURES & STATS */
+.sp-features__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.sp-feature-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.sp-feature-icon {
+  color: #00e5ff;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+.sp-feature-card h4 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.sp-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  background: rgba(0, 229, 255, 0.05);
+  border: 1px solid rgba(0, 229, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.sp-stat {
+  text-align: center;
+}
+
+.sp-stat__num {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.sp-stat__label {
+  color: #8892b0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+}
+
+/* FINAL CTA */
+.sp-final-cta {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 229, 255, 0.05));
+  border-top: 1px solid rgba(0, 229, 255, 0.1);
+}
+
+.sp-final-cta__content {
+  position: relative;
+  z-index: 1;
+}
+
+.sp-final-cta h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  text-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .sp-hero__title {
+    font-size: 2.5rem;
+  }
+  
+  .sp-section-title {
+    font-size: 2rem;
+  }
+  
+  .sp-form__row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .sp-process__grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sp-final-cta h2 {
+    font-size: 2rem;
+  }
+
+  .sp-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+}
