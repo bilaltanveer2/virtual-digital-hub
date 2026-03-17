@@ -10,14 +10,37 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Virtual Digital Hub - Best Digital Marketing & Growth Agency</title>
-        <meta name="description" content="Virtual Digital Hub is a top digital growth studio helping brands scale through Shopify development, Google Ads, Meta Ads, and SEO." />
-        <meta name="keywords" content="Digital Growth Studio, Virtual Digital Hub, Best marketing agency in Pakistan, Shopify marketing agency, Google Ads agency, Meta Ads expert, eCommerce scaling, Top digital marketing agency Pakistan, Shopify developers Pakistan, eCommerce growth agency, online marketing agency, search engine optimization strategy, ROAS optimization, performance marketing agency, B2B digital marketing, B2C marketing strategies, digital marketing consultation, Meta Ads for eCommerce, Google PPC management, Facebook ads management, Instagram ads expert, digital marketing services near me, scaling eCommerce brands, revenue growth strategies, increase online sales, targeted advertising agency, digital branding experts, conversion rate optimization CRO, landing page optimization, digital marketing solutions, business growth agency, marketing ROI improvement, TikTok ads agency, video marketing agency, top rated Shopify experts, Shopify store optimization, eCommerce revenue growth, D2C marketing agency, direct to consumer marketing, data driven marketing strategy, eCommerce growth consultants, digital media buying agency, performance marketing specialists USA, digital marketing agency UK, global eCommerce scaling, outsource digital marketing, best SEO agency, local SEO experts, Facebook marketing partners, Google premier partners, TikTok eCommerce marketing" />
-        <meta property="og:title" content="Virtual Digital Hub - Best Digital Marketing & Growth Agency" />
-        <meta property="og:description" content="Scale your business with expert Shopify, Google Ads, and Meta Ads strategies by Virtual Digital Hub." />
+        <title>Digital Marketing Agency in Pakistan | SEO, Shopify & Ads | Virtual Digital Hub</title>
+
+        <meta
+          name="description"
+          content="Virtual Digital Hub is a leading digital marketing agency in Pakistan offering SEO services, Shopify development, Google Ads, Meta Ads and TikTok marketing to grow your business."
+        />
+
+        {/* Focused keywords (NOT stuffing) */}
+        <meta
+          name="keywords"
+          content="digital marketing agency in Pakistan, SEO services Pakistan, Shopify development, Google Ads agency, Meta Ads marketing, TikTok ads services"
+        />
+
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://virtualdigitalhub.online/" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Virtual Digital Hub - Digital Marketing Agency in Pakistan" />
+        <meta property="og:description" content="Grow your business with SEO, Shopify development and paid ads marketing." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://virtualdigitalhub.online/" />
+
       </Helmet>
+
+      {/* ✅ SEO Headings (VERY IMPORTANT) */}
+      <h1 style={{display: "none"}}>
+        Digital Marketing Agency in Pakistan - Virtual Digital Hub
+      </h1>
+
       <HeroSection />
+
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -26,6 +49,22 @@ const HomePage = () => {
       >
         <ServicesSnapshot />
       </motion.div>
+
+      {/* Add SEO Content Section */}
+      <section style={{ padding: "40px 20px", maxWidth: "900px", margin: "auto" }}>
+        <h2>Digital Marketing Services to Grow Your Business</h2>
+        <p>
+          Virtual Digital Hub is a top digital marketing agency in Pakistan helping businesses grow through SEO, Shopify development and paid advertising. 
+          We specialize in Google Ads, Meta Ads and TikTok marketing strategies designed to increase traffic, generate leads and boost revenue.
+        </p>
+
+        <h2>Why Choose Our Digital Marketing Agency?</h2>
+        <p>
+          Our team focuses on data-driven marketing strategies that deliver real results. Whether you need SEO services to rank higher on Google 
+          or Shopify development to build a high-converting store, we provide complete digital marketing solutions tailored to your business needs.
+        </p>
+      </section>
+
       <ResultsStrip />
       <TestimonialsStrip />
       <LeadMagnet />
@@ -34,4 +73,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
