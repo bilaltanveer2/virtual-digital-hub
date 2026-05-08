@@ -7,8 +7,8 @@ import ServicesPage from './pages/ServicesPage';
 import ResultsPage from './pages/ResultsPage';
 import ContactPage from './pages/ContactPage';
 import BlogPage from './pages/BlogPage';
-import AdminLoginPage from './pages/admin/AdminLoginPage';
-import AdminDashboard from './pages/admin/AdminDashboard';
+// import AdminLoginPage from './pages/admin/AdminLoginPage';
+// import AdminDashboard from './pages/admin/AdminDashboard';
 import StartProjectPage from './pages/StartProjectPage';
 
 function AppShell() {
@@ -85,8 +85,8 @@ function AppShell() {
             <Route path="/results" element={<ResultsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/blog" element={<BlogPage />} />
-            <Route path="/admin/login" element={<AdminLoginPage />} />
-            <Route path="/admin" element={<AdminDashboard />} />
+            {/* <Route path="/admin/login" element={<AdminLoginPage />} />
+            <Route path="/admin" element={<AdminDashboard />} /> */}
             <Route path="/start-project" element={<StartProjectPage />} />
             <Route path="/portfolio" element={<Navigate to="/" replace />} />
             <Route path="/pricing" element={<Navigate to="/" replace />} />
